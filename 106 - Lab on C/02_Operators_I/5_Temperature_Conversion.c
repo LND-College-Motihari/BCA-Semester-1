@@ -9,23 +9,13 @@
 int main() {
     int C, F;
 
-    printf("\n-------C = %d---------F = %d---------\n", C, F);
-
     // Converting CELSIUS to FAHRENHEIT
-
     printf("Enter the temperature in celsius : ");
     scanf("%d", &C);
 
-    // printf("\n-------C = %d---------F = %d---------\n", C, F);
+    F = (C*9)/5 + 32;
 
-    F = (C*9);
-    // printf("\n-------C = %d---------F = %d---------\n", C, F);
-
-    F /= 5;
-    // printf("\n-------C = %d---------F = %d---------\n", C, F);
-    F += 32;
-
-    printf("\n%d degree celsius = %d degree fahrenheit");
+    printf("\n%d degree celsius = %d degree fahrenheit", C, F);
 
 
     // Converting FAHRENHEIT into CELSIUS
@@ -34,7 +24,7 @@ int main() {
 
     C = (F-32)*5/9;
 
-    printf("\n%d degree fahrenheit = %d degree celsius");
+    printf("\n%d degree fahrenheit = %d degree celsius", F, C);
 
     return 0;
 }
