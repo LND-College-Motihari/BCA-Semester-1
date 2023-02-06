@@ -7,5 +7,25 @@
 #include <stdio.h>
 
 int main() {
+
+    int num;
+    printf("Enter the number : ");
+    scanf("%d", &num);
+
+    int rev = 0;
+    int temp = num;
+
+    while(temp != 0) {
+        int rem = temp % 10;
+        rev = rev*10 + rem;
+        temp /= 10;
+    }
+
+    if(num == rev) {
+        printf("Entered number is a palindrome number!");
+    } else {
+        printf("Entered number is not a palindrome number!");
+    }
+    
     return 0;
 }
