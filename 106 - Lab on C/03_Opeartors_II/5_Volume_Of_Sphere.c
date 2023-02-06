@@ -7,5 +7,13 @@
 #include <stdio.h>
 
 int main() {
+    int rad;
+    printf("Enter the radius of the sphere : ");
+    scanf("%d", &rad);
+
+    float vol = 3.14 * rad * rad * rad;
+
+    printf("Volume of the sphere : %.2f", vol);
+
     return 0;
 }
