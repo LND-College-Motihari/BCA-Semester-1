@@ -7,5 +7,15 @@
 #include <stdio.h>
 
 int main() {
+    int rad, hgt;
+    printf("Enter the radius of the cylinder : ");
+    scanf("%d", &rad);
+    printf("Enter the height of the cylinder : ");
+    scanf("%d", &hgt);
+
+    float vol = 3.14 * rad * rad * hgt;
+
+    printf("Volume of the cylinder : %.2f", vol);
+
     return 0;
 }
